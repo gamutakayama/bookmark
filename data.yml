@@ -13,7 +13,7 @@ groups:
       iconify: simple-icons:iconify
       iconifySize: 32px
     - name: Cloudflare
-      url: https://cloudflare.com
+      url: https://dash.cloudflare.com
       iconify: devicon:cloudflare
   动画:
     - name: 動漫花園資源網
