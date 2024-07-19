@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link
+      rel="icon"
+      href="/images/favicon-16x16.png"
+      type="image/png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      href="/images/favicon-32x32.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/images/apple-icon-180.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div id="title" class="text-shadow"></div>
+      <div id="groups"></div>
+    </div>
+    <div id="loader">
+      <div class="loader"></div>
+    </div>
+  </body>
+  <script src="/iconify-icon.min.js"></script>
+  <script src="/js-yaml.min.js"></script>
+  <script>
+    const titleElement = document.getElementById("title");
+    const groupsElement = document.getElementById("groups");
+
+    const createGroupElement = (name, bookmarks) => {
+      const groupElement = document.createElement("div");
+      groupElement.classList.add("group");
+
+      const nameElement = document.createElement("div");
+      nameElement.classList.add("group-name", "text-shadow");
+      nameElement.innerText = name;
+      groupElement.appendChild(nameElement);
+
+      const gridElement = document.createElement("div");
+      gridElement.classList.add("group-grid");
+      for (const bookmark of bookmarks) {
+        gridElement.appendChild(createBookmarkElement(bookmark));
+      }
+      groupElement.appendChild(gridElement);
+
+      groupsElement.appendChild(groupElement);
+    };
+
+    const createBookmarkElement = (bookmark) => {
+      const bookmarkElement = document.createElement("a");
+      bookmarkElement.classList.add("bookmark");
+      if (bookmark.url) {
+        bookmarkElement.href = bookmark.url;
+        bookmarkElement.target = "_blank";
+      }
+
+      const backgroundElement = document.createElement("div");
+      backgroundElement.classList.add("bookmark-background");
+      if (bookmark.background) {
+        backgroundElement.style.background = bookmark.background;
+      }
+      bookmarkElement.appendChild(backgroundElement);
+
+      let iconElement;
+      if (bookmark.iconify) {
+        iconElement = document.createElement("iconify-icon");
+        iconElement.classList.add("bookmark-iconify");
+        iconElement.icon = bookmark.iconify;
+        iconElement.noobserver = true;
+        if (bookmark.iconifyColor) {
+          iconElement.style.color = bookmark.iconifyColor;
+        }
+        if (bookmark.iconifySize) {
+          iconElement.style.fontSize = bookmark.iconifySize;
+        }
+      } else if (bookmark.icon) {
+        iconElement = document.createElement("img");
+        iconElement.classList.add("bookmark-icon");
+        iconElement.src = bookmark.icon;
+        if (bookmark.iconSize) {
+          iconElement.style.height = bookmark.iconSize;
+          iconElement.style.width = bookmark.iconSize;
+        }
+        if (bookmark.iconRadius) {
+          iconElement.style.borderRadius = bookmark.iconRadius;
+        }
+      }
+
+      backgroundElement.appendChild(iconElement);
+
+      const nameElement = document.createElement("div");
+      nameElement.classList.add("bookmark-name", "text-shadow");
+      nameElement.innerText = bookmark.name;
+      bookmarkElement.appendChild(nameElement);
+
+      return bookmarkElement;
+    };
+
+    (async () => {
+      const response = await fetch("/data.yml");
+      if (response.ok) {
+        const data = jsyaml.load(await response.text());
+        if (data.title) {
+          titleElement.innerText = data.title;
+          if (document.title !== data.title) {
+            document.title = data.title;
+          }
+        } else {
+          titleElement.innerText = data.title || document.title;
+        }
+        for (const [name, bookmarks] of Object.entries(data.groups)) {
+          createGroupElement(name, bookmarks);
+        }
+
+        document.getElementById("loader").style.display = "none";
+      }
+    })();
+  </script>
+</html>
