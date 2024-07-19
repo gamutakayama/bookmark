@@ -47,6 +47,9 @@ groups:
       icon: https://zh-hans.tld-list.com/apple-touch-icon.png
       iconSize: 100%
       iconRadius: 16px
+    - name: Cloud Convert
+      url: https://cloudconvert.com/
+      icon: https://cloudconvert.com/images/logo_flat_110_borderless.png
     - name: Favicon Generator
       url: https://favicon.io
       icon: https://favicon.io/assets/static/favicon.b9532cc.ed88c65f76fa003989a0c683d668c765.png
