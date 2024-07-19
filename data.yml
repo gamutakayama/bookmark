@@ -57,6 +57,11 @@ groups:
       icon: https://jsoneditoronline.org/favicon.png
       iconSize: 100%
       iconRadius: 16px
+    - name: TinyPNG
+      url: https://tinypng.com
+      icon: https://tinypng.com/images/apple-touch-icon.png
+      iconSize: 100%
+      iconRadius: 16px
   应用:
     - name: Chibisafe
       url: https://chibisafe.app
