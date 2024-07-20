@@ -70,10 +70,6 @@
   - name: Oracle Server Keep Alive Script
     url: https://github.com/spiritLHLS/Oracle-server-keep-alive-script
     iconify: mdi:github
-应用:
-  - name: Chibisafe
-    url: https://chibisafe.app
-    icon: https://chibisafe.app/android-chrome-512x512.png
 域名:
   - name: Cloudflare
     url: https://dash.cloudflare.com
