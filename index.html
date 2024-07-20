@@ -36,6 +36,7 @@
   <script src="/js-yaml.min.js"></script>
   <script>
     const titleElement = document.getElementById("title");
+    titleElement.innerText = document.title;
     const groupsElement = document.getElementById("groups");
 
     const createGroupElement = (name, bookmarks) => {
@@ -111,15 +112,7 @@
       const response = await fetch("/data.yml");
       if (response.ok) {
         const data = jsyaml.load(await response.text());
-        if (data.title) {
-          titleElement.innerText = data.title;
-          if (document.title !== data.title) {
-            document.title = data.title;
-          }
-        } else {
-          titleElement.innerText = data.title || document.title;
-        }
-        for (const [name, bookmarks] of Object.entries(data.groups)) {
+        for (const [name, bookmarks] of Object.entries(data)) {
           createGroupElement(name, bookmarks);
         }
 

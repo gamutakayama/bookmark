@@ -1,78 +1,84 @@
-title: Bookmark
-groups:
-  默认:
-    - name: Google 翻译
-      url: https://translate.google.com
-      iconify: mdi:translate
-      iconifySize: 32px
-    - name: 维基百科
-      url: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
-      iconify: mdi:wikipedia
-    - name: Iconify
-      url: https://icon-sets.iconify.design
-      iconify: simple-icons:iconify
-      iconifySize: 32px
-    - name: Cloudflare
-      url: https://dash.cloudflare.com
-      iconify: devicon:cloudflare
-  动画:
-    - name: 動漫花園資源網
-      url: https://share.dmhy.org
-      icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
-      iconSize: 100%
-      iconRadius: 16px
-    - name: 柯南事务所
-      url: https://share.dmhy.org/topics/list/team_id/75
-      icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
-      iconSize: 100%
-      iconRadius: 16px
-    - name: 星光字幕组
-      url: https://share.dmhy.org/topics/list/team_id/299
-      icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
-      iconSize: 100%
-      iconRadius: 16px
-    - name: 银色子弹字幕组
-      url: https://share.dmhy.org/topics/list/team_id/576
-      icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
-      iconSize: 100%
-      iconRadius: 16px
-    - name: 银色子弹数据站
-      url: https://www.sbsub.com/data/
-      icon: https://cloud.sbsub.com/uploads/2021/03/favicon.png
-      iconSize: 100%
-      iconRadius: 16px
-  工具:
-    - name: 比较所有顶级域名的价格
-      url: https://zh-hans.tld-list.com
-      icon: https://zh-hans.tld-list.com/apple-touch-icon.png
-      iconSize: 100%
-      iconRadius: 16px
-    - name: Cloud Convert
-      url: https://cloudconvert.com/
-      icon: https://cloudconvert.com/images/logo_flat_110_borderless.png
-    - name: Favicon Generator
-      url: https://favicon.io
-      icon: https://favicon.io/assets/static/favicon.b9532cc.ed88c65f76fa003989a0c683d668c765.png
-      iconSize: 100%
-      iconRadius: 16px
-    - name: JSON Editor Online
-      url: https://jsoneditoronline.org
-      icon: https://jsoneditoronline.org/favicon.png
-      iconSize: 100%
-      iconRadius: 16px
-    - name: TinyPNG
-      url: https://tinypng.com
-      icon: https://tinypng.com/images/apple-touch-icon.png
-      iconSize: 100%
-      iconRadius: 16px
-  应用:
-    - name: Chibisafe
-      url: https://chibisafe.app
-      icon: https://chibisafe.app/android-chrome-512x512.png
-  脚本:
-    - name: ECS
-      url: https://github.com/spiritLHLS/ecs
-      iconify: mdi:github
-    - name: Oracle Server Keep Alive Script
-      url: https://github.com/spiritLHLS/Oracle-server-keep-alive-script
-      iconify: mdi:github
+默认:
+  - name: Google 翻译
+    url: https://translate.google.com
+    iconify: mdi:translate
+    iconifySize: 32px
+  - name: 维基百科
+    url: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+    iconify: mdi:wikipedia
+  - name: Iconify
+    url: https://icon-sets.iconify.design
+    iconify: simple-icons:iconify
+    iconifySize: 32px
+动画:
+  - name: 動漫花園資源網
+    url: https://share.dmhy.org
+    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
+    iconSize: 100%
+    iconRadius: 16px
+  - name: 柯南事务所
+    url: https://share.dmhy.org/topics/list/team_id/75
+    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
+    iconSize: 100%
+    iconRadius: 16px
+  - name: 星光字幕组
+    url: https://share.dmhy.org/topics/list/team_id/299
+    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
+    iconSize: 100%
+    iconRadius: 16px
+  - name: 银色子弹字幕组
+    url: https://share.dmhy.org/topics/list/team_id/576
+    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
+    iconSize: 100%
+    iconRadius: 16px
+  - name: 银色子弹数据站
+    url: https://www.sbsub.com/data/
+    icon: https://cloud.sbsub.com/uploads/2021/03/favicon.png
+    iconSize: 100%
+    iconRadius: 16px
+  - name: 名侦探柯南动画集数列表
+    url: https://zh.wikipedia.org/wiki/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97%E5%8B%95%E7%95%AB%E9%9B%86%E6%95%B8%E5%88%97%E8%A1%A8
+    iconify: mdi:wikipedia
+工具:
+  - name: 比较所有顶级域名的价格
+    url: https://zh-hans.tld-list.com
+    icon: https://zh-hans.tld-list.com/apple-touch-icon.png
+    iconSize: 100%
+    iconRadius: 16px
+  - name: Cloud Convert
+    url: https://cloudconvert.com/
+    icon: https://cloudconvert.com/images/logo_flat_110_borderless.png
+  - name: Favicon Generator
+    url: https://favicon.io
+    icon: https://favicon.io/assets/static/favicon.b9532cc.ed88c65f76fa003989a0c683d668c765.png
+    iconSize: 100%
+    iconRadius: 16px
+  - name: JSON Editor Online
+    url: https://jsoneditoronline.org
+    icon: https://jsoneditoronline.org/favicon.png
+    iconSize: 100%
+    iconRadius: 16px
+  - name: TinyPNG
+    url: https://tinypng.com
+    icon: https://tinypng.com/images/apple-touch-icon.png
+    iconSize: 100%
+    iconRadius: 16px
+脚本:
+  - name: ECS
+    url: https://github.com/spiritLHLS/ecs
+    iconify: mdi:github
+  - name: Oracle Server Keep Alive Script
+    url: https://github.com/spiritLHLS/Oracle-server-keep-alive-script
+    iconify: mdi:github
+应用:
+  - name: Chibisafe
+    url: https://chibisafe.app
+    icon: https://chibisafe.app/android-chrome-512x512.png
+域名:
+  - name: Cloudflare
+    url: https://dash.cloudflare.com
+    iconify: simple-icons:cloudflare
+  - name: Spaceship
+    url: https://spaceship.com
+    iconify: simple-icons:spaceship
+    iconifySize: 32px
