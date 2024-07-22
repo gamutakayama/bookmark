@@ -40,11 +40,6 @@
     url: https://zh.wikipedia.org/wiki/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97%E5%8B%95%E7%95%AB%E9%9B%86%E6%95%B8%E5%88%97%E8%A1%A8
     iconify: mdi:wikipedia
 工具:
-  - name: 比较所有顶级域名的价格
-    url: https://zh-hans.tld-list.com
-    icon: https://zh-hans.tld-list.com/apple-touch-icon.png
-    iconSize: 100%
-    iconRadius: 16px
   - name: Cloud Convert
     url: https://cloudconvert.com/
     icon: https://cloudconvert.com/images/logo_flat_110_borderless.png
@@ -71,6 +66,11 @@
     url: https://github.com/spiritLHLS/Oracle-server-keep-alive-script
     iconify: mdi:github
 域名:
+  - name: 比较所有顶级域名的价格
+    url: https://zh-hans.tld-list.com
+    icon: https://zh-hans.tld-list.com/apple-touch-icon.png
+    iconSize: 100%
+    iconRadius: 16px
   - name: Cloudflare
     url: https://dash.cloudflare.com
     iconify: simple-icons:cloudflare
@@ -78,3 +78,8 @@
     url: https://spaceship.com
     iconify: simple-icons:spaceship
     iconifySize: 32px
+  - name: Whois
+    url: https://www.whois.com/whois
+    icon: https://www.whois.com/images/favicon.ico
+    background: white
+    iconSize: 32px
