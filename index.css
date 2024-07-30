@@ -35,7 +35,7 @@ body::before {
   z-index: -1;
 }
 
-#title {
+.title {
   color: white;
   font-size: 48px;
   font-weight: bold;
@@ -147,7 +147,7 @@ body::before {
 }
 
 @media only screen and (max-width: 767px) {
-  #title {
+  .title {
     font-size: 24px;
   }
 

@@ -83,3 +83,7 @@
     icon: https://www.whois.com/images/favicon.ico
     background: white
     iconSize: 32px
+  - name: Whois - Gandi
+    url: https://whois.gandi.net
+    icon: https://whois.gandi.net/assets/img/favicon/favicon.svg
+    background: "#121212"
