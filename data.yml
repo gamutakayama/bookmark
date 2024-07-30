@@ -53,6 +53,9 @@
     icon: https://jsoneditoronline.org/favicon.png
     iconSize: 100%
     iconRadius: 16px
+  - name: Time.is
+    url: https://time.is
+    iconify: mdi:clock-time-three
   - name: TinyPNG
     url: https://tinypng.com
     icon: https://tinypng.com/images/apple-touch-icon.png
