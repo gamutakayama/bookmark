@@ -53,6 +53,10 @@
     icon: https://jsoneditoronline.org/favicon.png
     iconSize: 100%
     iconRadius: 16px
+  - name: CSS Mesh Gradients Generator
+    url: https://csshero.org/mesher
+    icon: https://csshero.org/mesher/meshicon.ico
+    background: white
   - name: Time.is
     url: https://time.is
     iconify: mdi:clock-time-three
