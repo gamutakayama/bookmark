@@ -1,15 +1,3 @@
-默认:
-  - name: Google 翻译
-    url: https://translate.google.com
-    iconify: mdi:translate
-    iconifySize: 32px
-  - name: 维基百科
-    url: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
-    iconify: mdi:wikipedia
-  - name: Iconify
-    url: https://icon-sets.iconify.design
-    iconify: simple-icons:iconify
-    iconifySize: 32px
 动画:
   - name: 動漫花園資源網
     url: https://share.dmhy.org
@@ -48,6 +36,10 @@
     icon: https://favicon.io/assets/static/favicon.b9532cc.ed88c65f76fa003989a0c683d668c765.png
     iconSize: 100%
     iconRadius: 16px
+  - name: Google 翻译
+    url: https://translate.google.com
+    iconify: mdi:translate
+    iconifySize: 32px
   - name: JSON Editor Online
     url: https://jsoneditoronline.org
     icon: https://jsoneditoronline.org/favicon.png
@@ -72,6 +64,14 @@
   - name: Oracle Server Keep Alive Script
     url: https://github.com/spiritLHLS/Oracle-server-keep-alive-script
     iconify: mdi:github
+设计:
+  - name: Bootstrap Icons
+    url: https://icons.getbootstrap.com
+    iconify: simple-icons:bootstrap
+  - name: Iconify
+    url: https://icon-sets.iconify.design
+    iconify: simple-icons:iconify
+    iconifySize: 32px
 域名:
   - name: 比较所有顶级域名的价格
     url: https://zh-hans.tld-list.com
@@ -94,3 +94,7 @@
     url: https://whois.gandi.net
     icon: https://whois.gandi.net/assets/img/favicon/favicon.svg
     background: "#121212"
+资料:
+  - name: 维基百科
+    url: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+    iconify: mdi:wikipedia
