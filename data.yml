@@ -76,8 +76,7 @@
   - name: 比较所有顶级域名的价格
     url: https://zh-hans.tld-list.com
     icon: https://zh-hans.tld-list.com/apple-touch-icon.png
-    iconSize: 100%
-    iconRadius: 16px
+    background: "#0b83a8"
   - name: Cloudflare
     url: https://dash.cloudflare.com
     iconify: simple-icons:cloudflare
