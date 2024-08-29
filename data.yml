@@ -20,7 +20,7 @@
     iconSize: 100%
     iconRadius: 16px
   - name: 银色子弹数据站
-    url: https://www.sbsub.com/data/
+    url: https://sbsub.com/data
     icon: https://cloud.sbsub.com/uploads/2021/03/favicon.png
     iconSize: 100%
     iconRadius: 16px
@@ -28,14 +28,21 @@
     url: https://zh.wikipedia.org/wiki/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97%E5%8B%95%E7%95%AB%E9%9B%86%E6%95%B8%E5%88%97%E8%A1%A8
     iconify: mdi:wikipedia
 工具:
+  - name: ASCII Tree Generator
+    url: https://tree.nathanfriend.io
+    icon: https://tree.nathanfriend.io/tree-logo.png
+    background: "#272727"
   - name: Cloud Convert
-    url: https://cloudconvert.com/
+    url: https://cloudconvert.com
     icon: https://cloudconvert.com/images/logo_flat_110_borderless.png
+  - name: CSS Mesh Gradients Generator
+    url: https://csshero.org/mesher
+    icon: https://csshero.org/mesher/meshicon.ico
+    background: white
   - name: Favicon Generator
     url: https://favicon.io
     icon: https://favicon.io/assets/static/favicon.b9532cc.ed88c65f76fa003989a0c683d668c765.png
-    iconSize: 100%
-    iconRadius: 16px
+    background: "#209cee"
   - name: Google 翻译
     url: https://translate.google.com
     iconify: mdi:translate
@@ -43,12 +50,7 @@
   - name: JSON Editor Online
     url: https://jsoneditoronline.org
     icon: https://jsoneditoronline.org/favicon.png
-    iconSize: 100%
-    iconRadius: 16px
-  - name: CSS Mesh Gradients Generator
-    url: https://csshero.org/mesher
-    icon: https://csshero.org/mesher/meshicon.ico
-    background: white
+    iconify: lets-icons:json
   - name: Time.is
     url: https://time.is
     iconify: mdi:clock-time-three
@@ -72,6 +74,10 @@
     url: https://icon-sets.iconify.design
     iconify: simple-icons:iconify
     iconifySize: 32px
+  - name: Photopea
+    url: https://photopea.com
+    iconify: simple-icons:photopea
+    iconifySize: 32px
 域名:
   - name: 比较所有顶级域名的价格
     url: https://zh-hans.tld-list.com
@@ -85,8 +91,8 @@
     iconify: simple-icons:spaceship
     iconifySize: 32px
   - name: Whois
-    url: https://www.whois.com/whois
-    icon: https://www.whois.com/images/favicon.ico
+    url: https://whois.com/whois
+    icon: https://whois.com/images/favicon.ico
     background: white
     iconSize: 32px
   - name: Whois - Gandi
