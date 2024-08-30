@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,6 +26,14 @@
   <body>
     <div id="root">
       <div class="title text-shadow">Bookmark</div>
+      <div class="search-box">
+        <iconify-icon
+          class="search-icon"
+          icon="mdi:search"
+          noobserver
+        ></iconify-icon>
+        <input id="search" type="text" />
+      </div>
       <div id="groups"></div>
     </div>
     <div id="loader">
@@ -35,16 +43,55 @@
   <script src="/iconify-icon.min.js"></script>
   <script src="/js-yaml.min.js"></script>
   <script>
+    const debounce = (callback, wait) => {
+      let timeoutId = null;
+
+      return (...args) => {
+        window.clearTimeout(timeoutId);
+        timeoutId = window.setTimeout(() => {
+          callback(...args);
+        }, wait);
+      };
+    };
+
+    const search = debounce((e) => {
+      while (groupsElement.firstChild) {
+        groupsElement.removeChild(groupsElement.lastChild);
+      }
+
+      const keyword = e.target.value.toLowerCase();
+      if (keyword) {
+        const bookmarks = Object.values(data)
+          .flat()
+          .filter((bookmark) => {
+            return (
+              bookmark.name.toLowerCase().includes(keyword) ||
+              bookmark.url.toLowerCase().includes(keyword)
+            );
+          });
+        createGroupElement("", bookmarks);
+      } else {
+        for (const [name, bookmarks] of Object.entries(data)) {
+          createGroupElement(name, bookmarks);
+        }
+      }
+    }, 250);
+
+    const searchElement = document.getElementById("search");
+    searchElement.addEventListener("input", search);
+
     const groupsElement = document.getElementById("groups");
 
     const createGroupElement = (name, bookmarks) => {
       const groupElement = document.createElement("div");
       groupElement.classList.add("group");
 
-      const nameElement = document.createElement("div");
-      nameElement.classList.add("group-name", "text-shadow");
-      nameElement.innerText = name;
-      groupElement.appendChild(nameElement);
+      if (name) {
+        const nameElement = document.createElement("div");
+        nameElement.classList.add("group-name", "text-shadow");
+        nameElement.innerText = name;
+        groupElement.appendChild(nameElement);
+      }
 
       const gridElement = document.createElement("div");
       gridElement.classList.add("group-grid");
@@ -106,10 +153,12 @@
       return bookmarkElement;
     };
 
+    let data = {};
+
     (async () => {
       const response = await fetch("/data.yml");
       if (response.ok) {
-        const data = jsyaml.load(await response.text());
+        data = jsyaml.load(await response.text());
         for (const [name, bookmarks] of Object.entries(data)) {
           createGroupElement(name, bookmarks);
         }
@@ -117,5 +166,12 @@
         document.getElementById("loader").style.display = "none";
       }
     })();
+
+    window.addEventListener("load", () => {
+      const isDesktop = "not screen and (hover: none) and (pointer: coarse)";
+      if (window.matchMedia(isDesktop).matches) {
+        searchElement.focus();
+      }
+    });
   </script>
 </html>

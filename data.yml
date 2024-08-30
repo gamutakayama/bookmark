@@ -1,47 +1,47 @@
 动画:
   - name: 動漫花園資源網
     url: https://share.dmhy.org
-    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
+    icon: /icons/share.dmhy.org.ico
     iconSize: 100%
     iconRadius: 16px
   - name: 柯南事务所
     url: https://share.dmhy.org/topics/list/team_id/75
-    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
+    icon: /icons/share.dmhy.org.ico
     iconSize: 100%
     iconRadius: 16px
   - name: 星光字幕组
     url: https://share.dmhy.org/topics/list/team_id/299
-    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
+    icon: /icons/share.dmhy.org.ico
     iconSize: 100%
     iconRadius: 16px
   - name: 银色子弹字幕组
     url: https://share.dmhy.org/topics/list/team_id/576
-    icon: /icons/dong-man-hua-yuan-zi-yuan-wang.ico
-    iconSize: 100%
-    iconRadius: 16px
-  - name: 银色子弹数据站
-    url: https://sbsub.com/data
-    icon: https://cloud.sbsub.com/uploads/2021/03/favicon.png
+    icon: /icons/share.dmhy.org.ico
     iconSize: 100%
     iconRadius: 16px
   - name: 名侦探柯南动画集数列表
     url: https://zh.wikipedia.org/wiki/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97%E5%8B%95%E7%95%AB%E9%9B%86%E6%95%B8%E5%88%97%E8%A1%A8
     iconify: mdi:wikipedia
+  - name: 银色子弹数据站
+    url: https://sbsub.com/data
+    icon: /icons/sbsub.com.png
+    iconSize: 100%
+    iconRadius: 16px
 工具:
   - name: ASCII Tree Generator
     url: https://tree.nathanfriend.io
-    icon: https://tree.nathanfriend.io/tree-logo.png
+    icon: /icons/tree.nathanfriend.io.png
     background: "#272727"
   - name: Cloud Convert
     url: https://cloudconvert.com
-    icon: https://cloudconvert.com/images/logo_flat_110_borderless.png
+    icon: /icons/cloudconvert.com.png
   - name: CSS Mesh Gradients Generator
     url: https://csshero.org/mesher
-    icon: https://csshero.org/mesher/meshicon.ico
+    icon: /icons/csshero.org_mesher.ico
     background: white
   - name: Favicon Generator
     url: https://favicon.io
-    icon: https://favicon.io/assets/static/favicon.b9532cc.ed88c65f76fa003989a0c683d668c765.png
+    icon: /icons/favicon.io.png
     background: "#209cee"
   - name: Google 翻译
     url: https://translate.google.com
@@ -49,14 +49,13 @@
     iconifySize: 32px
   - name: JSON Editor Online
     url: https://jsoneditoronline.org
-    icon: https://jsoneditoronline.org/favicon.png
     iconify: lets-icons:json
   - name: Time.is
     url: https://time.is
     iconify: mdi:clock-time-three
   - name: TinyPNG
     url: https://tinypng.com
-    icon: https://tinypng.com/images/apple-touch-icon.png
+    icon: /icons/tinypng.com.png
     iconSize: 100%
     iconRadius: 16px
 脚本:
@@ -81,7 +80,7 @@
 域名:
   - name: 比较所有顶级域名的价格
     url: https://zh-hans.tld-list.com
-    icon: https://zh-hans.tld-list.com/apple-touch-icon.png
+    icon: /icons/tld-list.com.webp
     background: "#0b83a8"
   - name: Cloudflare
     url: https://dash.cloudflare.com
@@ -92,13 +91,12 @@
     iconifySize: 32px
   - name: Whois
     url: https://whois.com/whois
-    icon: https://whois.com/images/favicon.ico
+    icon: /icons/whois.com.ico
     background: white
     iconSize: 32px
   - name: Whois - Gandi
     url: https://whois.gandi.net
-    icon: https://whois.gandi.net/assets/img/favicon/favicon.svg
-    background: "#121212"
+    icon: /icons/gandi.net.svg
 资料:
   - name: 维基百科
     url: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5

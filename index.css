@@ -35,12 +35,52 @@ body::before {
   z-index: -1;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
 .title {
+  align-self: center;
   color: white;
   font-size: 48px;
   font-weight: bold;
   padding-top: 64px;
-  text-align: center;
+}
+
+.search-box {
+  align-self: center;
+  margin-top: 32px;
+  max-width: 500px;
+  position: relative;
+  width: 68%;
+}
+
+.search-icon {
+  color: white;
+  font-size: 24px;
+  inset-inline-start: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#search {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  border-radius: 24px;
+  color: white;
+  font-size: 16px;
+  height: 48px;
+  padding-bottom: 0;
+  padding-inline-end: 24px;
+  padding-inline-start: 48px;
+  padding-top: 0;
+  width: 100%;
+}
+
+#search:focus {
+  outline: none;
 }
 
 #groups {
@@ -84,13 +124,7 @@ body::before {
   display: flex;
   height: 60px;
   justify-content: center;
-  transition: all 0.5s;
   width: 60px;
-}
-
-.bookmark-background:hover {
-  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.13),
-    0 3px 6px -4px rgba(0, 0, 0, 0.17), 0 9px 28px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bookmark-icon {
@@ -149,6 +183,16 @@ body::before {
 @media only screen and (max-width: 767px) {
   .title {
     font-size: 24px;
+  }
+
+  .search-icon {
+    inset-inline-start: 12px;
+  }
+
+  #search {
+    height: 40px;
+    padding-inline-end: 20px;
+    padding-inline-start: 40px;
   }
 
   .group-grid {
