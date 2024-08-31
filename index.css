@@ -60,6 +60,7 @@ body::before {
   color: white;
   font-size: 24px;
   inset-inline-start: 16px;
+  pointer-events: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -72,15 +73,23 @@ body::before {
   color: white;
   font-size: 16px;
   height: 48px;
-  padding-bottom: 0;
-  padding-inline-end: 24px;
-  padding-inline-start: 48px;
-  padding-top: 0;
+  padding: 0 48px;
   width: 100%;
 }
 
 #search:focus {
   outline: none;
+}
+
+#search-clear {
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  inset-inline-end: 16px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  visibility: hidden;
 }
 
 #groups {
@@ -191,8 +200,11 @@ body::before {
 
   #search {
     height: 40px;
-    padding-inline-end: 20px;
-    padding-inline-start: 40px;
+    padding: 0 40px;
+  }
+
+  #search-clear {
+    inset-inline-end: 12px;
   }
 
   .group-grid {

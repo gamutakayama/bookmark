@@ -33,6 +33,11 @@
           noobserver
         ></iconify-icon>
         <input id="search" type="text" />
+        <iconify-icon
+          id="search-clear"
+          icon="mdi:remove"
+          noobserver
+        ></iconify-icon>
       </div>
       <div id="groups"></div>
     </div>
@@ -54,12 +59,12 @@
       };
     };
 
-    const search = debounce((e) => {
+    const search = debounce((value) => {
       while (groupsElement.firstChild) {
         groupsElement.removeChild(groupsElement.lastChild);
       }
 
-      const keyword = e.target.value.toLowerCase();
+      const keyword = value.toLowerCase();
       if (keyword) {
         const bookmarks = Object.values(data)
           .flat()
@@ -78,7 +83,20 @@
     }, 250);
 
     const searchElement = document.getElementById("search");
-    searchElement.addEventListener("input", search);
+    searchElement.addEventListener("input", (e) => {
+      const value = e.target.value;
+      search(value);
+      searchClearElement.style.visibility = value ? "visible" : "hidden";
+    });
+
+    const searchClearElement = document.getElementById("search-clear");
+    searchClearElement.addEventListener("click", () => {
+      searchElement.value = "";
+      searchElement.focus();
+      searchClearElement.style.visibility = "hidden";
+
+      search("");
+    });
 
     const groupsElement = document.getElementById("groups");
 
