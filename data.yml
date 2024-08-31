@@ -20,7 +20,7 @@
     iconSize: 100%
     iconRadius: 16px
   - name: 名侦探柯南动画集数列表
-    url: https://zh.wikipedia.org/wiki/%E5%90%8D%E5%81%B5%E6%8E%A2%E6%9F%AF%E5%8D%97%E5%8B%95%E7%95%AB%E9%9B%86%E6%95%B8%E5%88%97%E8%A1%A8
+    url: https://zh.wikipedia.org/wiki/名偵探柯南動畫集數列表
     iconify: mdi:wikipedia
   - name: 银色子弹数据站
     url: https://sbsub.com/data
@@ -99,5 +99,5 @@
     icon: /icons/gandi.net.svg
 资料:
   - name: 维基百科
-    url: https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5
+    url: https://zh.wikipedia.org/wiki/Wikipedia:首页
     iconify: mdi:wikipedia
