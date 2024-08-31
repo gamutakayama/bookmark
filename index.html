@@ -40,8 +40,8 @@
       <div class="loader"></div>
     </div>
   </body>
+  <script src="/data.js"></script>
   <script src="/iconify-icon.min.js"></script>
-  <script src="/js-yaml.min.js"></script>
   <script>
     const debounce = (callback, wait) => {
       let timeoutId = null;
@@ -153,19 +153,11 @@
       return bookmarkElement;
     };
 
-    let data = {};
+    for (const [name, bookmarks] of Object.entries(data)) {
+      createGroupElement(name, bookmarks);
+    }
 
-    (async () => {
-      const response = await fetch("/data.yml");
-      if (response.ok) {
-        data = jsyaml.load(await response.text());
-        for (const [name, bookmarks] of Object.entries(data)) {
-          createGroupElement(name, bookmarks);
-        }
-
-        document.getElementById("loader").style.display = "none";
-      }
-    })();
+    document.getElementById("loader").style.display = "none";
 
     window.addEventListener("load", () => {
       const isDesktop = "not screen and (hover: none) and (pointer: coarse)";
