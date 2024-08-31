@@ -84,9 +84,20 @@
 
     const searchElement = document.getElementById("search");
     searchElement.addEventListener("input", (e) => {
+      if (e.target.isComposing) {
+        return;
+      }
+
       const value = e.target.value;
       search(value);
       searchClearElement.style.visibility = value ? "visible" : "hidden";
+    });
+    searchElement.addEventListener("compositionstart", (e) => {
+      e.target.isComposing = true;
+    });
+    searchElement.addEventListener("compositionend", (e) => {
+      e.target.isComposing = false;
+      e.target.dispatchEvent(new CustomEvent("input"));
     });
 
     const searchClearElement = document.getElementById("search-clear");
