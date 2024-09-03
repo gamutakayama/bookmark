@@ -3,30 +3,22 @@ const data = {
     {
       name: "動漫花園資源網",
       url: "https://share.dmhy.org",
-      icon: "/icons/share.dmhy.org.ico",
-      iconSize: "100%",
-      iconRadius: "16px",
+      icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "柯南事务所",
       url: "https://share.dmhy.org/topics/list/team_id/75",
-      icon: "/icons/share.dmhy.org.ico",
-      iconSize: "100%",
-      iconRadius: "16px",
+      icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "星光字幕组",
       url: "https://share.dmhy.org/topics/list/team_id/299",
-      icon: "/icons/share.dmhy.org.ico",
-      iconSize: "100%",
-      iconRadius: "16px",
+      icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "银色子弹字幕组",
       url: "https://share.dmhy.org/topics/list/team_id/576",
-      icon: "/icons/share.dmhy.org.ico",
-      iconSize: "100%",
-      iconRadius: "16px",
+      icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "名侦探柯南动画集数列表",
@@ -45,8 +37,7 @@ const data = {
     {
       name: "ASCII Tree Generator",
       url: "https://tree.nathanfriend.io",
-      icon: "/icons/tree.nathanfriend.io.png",
-      background: "#272727",
+      iconify: "mdi:file-tree",
     },
     {
       name: "Cloud Convert",
@@ -102,11 +93,6 @@ const data = {
     },
   ],
   设计: [
-    {
-      name: "Bootstrap Icons",
-      url: "https://icons.getbootstrap.com",
-      iconify: "simple-icons:bootstrap",
-    },
     {
       name: "Iconify",
       url: "https://icon-sets.iconify.design",
