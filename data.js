@@ -79,6 +79,12 @@ const data = {
       iconSize: "100%",
       iconRadius: "16px",
     },
+    {
+      name: "TOTP Token Generator",
+      url: "https://totp-token-generator.pages.dev",
+      icon: "/icons/totp-token-generator.pages.dev.svg",
+      iconSize: "32px",
+    },
   ],
   脚本: [
     {
@@ -115,7 +121,7 @@ const data = {
     },
     {
       name: "Cloudflare",
-      url: "https://dash.cloudflare.com",
+      url: "https://cloudflare.com",
       iconify: "simple-icons:cloudflare",
     },
     {
