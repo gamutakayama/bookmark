@@ -22,6 +22,12 @@
     <link rel="manifest" href="/site.webmanifest" />
     <title>Bookmark</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div id="root">
@@ -153,22 +159,38 @@
         iconElement.classList.add("bookmark-iconify");
         iconElement.icon = bookmark.iconify;
         iconElement.noobserver = true;
-        if (bookmark.iconifyColor) {
-          iconElement.style.color = bookmark.iconifyColor;
+        if (bookmark.color) {
+          iconElement.style.color = bookmark.color;
         }
-        if (bookmark.iconifySize) {
-          iconElement.style.fontSize = bookmark.iconifySize;
+        if (bookmark.size) {
+          iconElement.style.fontSize = bookmark.size;
         }
       } else if (bookmark.icon) {
         iconElement = document.createElement("img");
         iconElement.classList.add("bookmark-icon");
         iconElement.src = bookmark.icon;
-        if (bookmark.iconSize) {
-          iconElement.style.height = bookmark.iconSize;
-          iconElement.style.width = bookmark.iconSize;
+        if (bookmark.size) {
+          iconElement.style.height = bookmark.size;
+          iconElement.style.width = bookmark.size;
         }
-        if (bookmark.iconRadius) {
-          iconElement.style.borderRadius = bookmark.iconRadius;
+        if (bookmark.radius) {
+          iconElement.style.borderRadius = bookmark.radius;
+        }
+      } else if (bookmark.iconText) {
+        iconElement = document.createElement("div");
+        iconElement.classList.add("bookmark-icon-text");
+        iconElement.innerText = bookmark.iconText;
+        if (bookmark.color) {
+          iconElement.style.color = bookmark.color;
+        }
+        if (bookmark.size) {
+          iconElement.style.fontSize = bookmark.size;
+        }
+        if (bookmark.fontWeight) {
+          iconElement.style.fontWeight = bookmark.fontWeight;
+        }
+        if (bookmark.fontFamily) {
+          iconElement.style.fontFamily = bookmark.fontFamily;
         }
       }
 

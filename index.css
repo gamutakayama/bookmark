@@ -147,6 +147,16 @@ body::before {
   font-size: 40px;
 }
 
+.bookmark-icon-text {
+  color: white;
+  font-size: 32px;
+  max-height: 100%;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  word-break: break-all;
+}
+
 .bookmark-name {
   color: white;
   font-size: 12px;
