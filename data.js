@@ -28,9 +28,8 @@ const data = {
     {
       name: "银色子弹数据站",
       url: "https://sbsub.com/data",
-      icon: "/icons/sbsub.com.png",
-      size: "100%",
-      radius: "16px",
+      icon: "/icons/sbsub.com.svg",
+      size: "48px",
     },
   ],
   工具: [
@@ -42,7 +41,7 @@ const data = {
     {
       name: "Cloud Convert",
       url: "https://cloudconvert.com",
-      icon: "/icons/cloudconvert.com.png",
+      iconify: "ant-design:cloud-sync-outlined",
     },
     {
       name: "CSS Mesh Gradients Generator",
