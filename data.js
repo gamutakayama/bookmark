@@ -133,8 +133,7 @@ const data = {
     {
       name: "Whois",
       url: "https://whois.com/whois",
-      icon: "/icons/whois.com.ico",
-      background: "white",
+      icon: "/icons/whois.com.svg",
       iconSize: "32px",
     },
     {
