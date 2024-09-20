@@ -97,6 +97,14 @@ const data = {
       iconify: "mdi:github",
     },
   ],
+  人工智能: [
+    {
+      name: "ChatGPT",
+      url: "https://chatgpt.com",
+      iconify: "simple-icons:openai",
+      size: "32px",
+    },
+  ],
   设计: [
     {
       name: "Iconify",
