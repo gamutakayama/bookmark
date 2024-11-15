@@ -28,6 +28,5 @@
     }
   ],
   "start_url": "/",
-  "display": "minimal-ui",
-  "dir": "auto"
+  "display": "minimal-ui"
 }

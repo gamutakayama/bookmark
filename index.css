@@ -45,8 +45,11 @@ body::before {
 .title {
   align-self: center;
   color: white;
-  font-size: 48px;
+  font-family: "Orbitron", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji";
+  font-size: 80px;
   font-weight: bold;
+  line-height: 1.5;
   padding-top: 64px;
 }
 
@@ -203,7 +206,7 @@ body::before {
 
 @media only screen and (max-width: 767px) {
   .title {
-    font-size: 24px;
+    font-size: 40px;
   }
 
   .search-icon {
