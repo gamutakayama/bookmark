@@ -139,15 +139,9 @@ const data = {
       size: "32px",
     },
     {
-      name: "Whois",
-      url: "https://whois.com/whois",
-      icon: "/icons/whois.com.svg",
-      size: "32px",
-    },
-    {
-      name: "Whois - Gandi",
-      url: "https://whois.gandi.net",
-      icon: "/icons/gandi.net.svg",
+      name: "WHO.CX",
+      url: "https://who.cx",
+      icon: "/icons/who.cx.svg",
     },
   ],
   资料: [
