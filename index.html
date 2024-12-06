@@ -167,6 +167,7 @@
         } else if (bookmark.icon) {
           iconElement = document.createElement("img");
           iconElement.classList.add("bookmark-icon");
+          iconElement.loading = "lazy";
           iconElement.src = bookmark.icon;
           if (bookmark.size) {
             iconElement.style.height = bookmark.size;
