@@ -186,7 +186,7 @@ body::before {
 
 .loader {
   animation: rotation 1s linear infinite;
-  border: 4px solid #007fff;
+  border: 4px solid #f44336;
   border-bottom-color: transparent;
   border-radius: 50%;
   display: inline-block;
