@@ -2,32 +2,32 @@ const data = {
   动画: [
     {
       name: "動漫花園資源網",
-      url: "https://share.dmhy.org",
+      url: "https://go.bkmk.link/5ndwhj",
       icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "柯南事务所",
-      url: "https://share.dmhy.org/topics/list/team_id/75",
+      url: "https://go.bkmk.link/thn32t",
       icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "星光字幕组",
-      url: "https://share.dmhy.org/topics/list/team_id/299",
+      url: "https://go.bkmk.link/hnb8rq",
       icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "银色子弹字幕组",
-      url: "https://share.dmhy.org/topics/list/team_id/576",
+      url: "https://go.bkmk.link/tmc2pv",
       icon: "/icons/share.dmhy.org.svg",
     },
     {
       name: "名侦探柯南动画集数列表",
-      url: "https://zh.wikipedia.org/wiki/名偵探柯南動畫集數列表",
+      url: "https://go.bkmk.link/gsyrc4",
       iconify: "mdi:wikipedia",
     },
     {
       name: "银色子弹数据站",
-      url: "https://sbsub.com/data",
+      url: "https://go.bkmk.link/ua66rp",
       icon: "/icons/sbsub.com.svg",
       size: "48px",
     },

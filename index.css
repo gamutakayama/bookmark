@@ -50,7 +50,15 @@ body::before {
   font-size: 80px;
   font-weight: bold;
   line-height: 1.5;
-  padding-top: 64px;
+  margin-top: 64px;
+}
+
+.title span {
+  transition: color 0.3s ease;
+}
+
+.title:hover span {
+  color: #f44336;
 }
 
 .search-box {
