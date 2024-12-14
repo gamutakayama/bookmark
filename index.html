@@ -75,12 +75,7 @@
         if (keyword) {
           const bookmarks = Object.values(data)
             .flat()
-            .filter((bookmark) => {
-              return (
-                bookmark.name.toLowerCase().includes(keyword) ||
-                decodeURIComponent(bookmark.url).toLowerCase().includes(keyword)
-              );
-            });
+            .filter((bkmk) => bkmk.name.toLowerCase().includes(keyword));
           createGroupElement("", bookmarks);
         } else {
           for (const [name, bookmarks] of Object.entries(data)) {

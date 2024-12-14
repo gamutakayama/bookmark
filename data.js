@@ -35,52 +35,52 @@ const data = {
   工具: [
     {
       name: "ASCII Tree Generator",
-      url: "https://tree.nathanfriend.io",
+      url: "https://go.bkmk.link/ptvj95",
       iconify: "mdi:file-tree",
     },
     {
       name: "Cloud Convert",
-      url: "https://cloudconvert.com",
+      url: "https://go.bkmk.link/5uwt97",
       iconify: "ant-design:cloud-sync-outlined",
     },
     {
       name: "CSS Mesh Gradients Generator",
-      url: "https://csshero.org/mesher",
+      url: "https://go.bkmk.link/e74ywj",
       icon: "/icons/csshero.org_mesher.svg",
       size: "32px",
     },
     {
       name: "Favicon Generator",
-      url: "https://favicon.io",
+      url: "https://go.bkmk.link/huumfg",
       iconText: "F",
       fontFamily: "Leckerli One, system-ui",
     },
     {
       name: "Google 翻译",
-      url: "https://translate.google.com",
+      url: "https://go.bkmk.link/mjppm7",
       iconify: "mdi:translate",
       size: "32px",
     },
     {
       name: "JSON Editor Online",
-      url: "https://jsoneditoronline.org",
+      url: "https://go.bkmk.link/wrk7ph",
       iconify: "lets-icons:json",
     },
     {
       name: "Time.is",
-      url: "https://time.is",
+      url: "https://go.bkmk.link/dh4ebr",
       iconify: "mdi:clock-time-three",
     },
     {
       name: "TinyPNG",
-      url: "https://tinypng.com",
+      url: "https://go.bkmk.link/exrh79",
       icon: "/icons/tinypng.com.png",
       size: "100%",
       radius: "16px",
     },
     {
       name: "TOTP Token Generator",
-      url: "https://totp-token-generator.pages.dev",
+      url: "https://go.bkmk.link/ta6whu",
       icon: "/icons/totp-token-generator.pages.dev.svg",
       size: "32px",
     },
@@ -88,19 +88,19 @@ const data = {
   脚本: [
     {
       name: "ECS",
-      url: "https://github.com/spiritLHLS/ecs",
+      url: "https://go.bkmk.link/ccrn23",
       iconify: "mdi:github",
     },
     {
       name: "Oracle Server Keep Alive Script",
-      url: "https://github.com/spiritLHLS/Oracle-server-keep-alive-script",
+      url: "https://go.bkmk.link/jyfywp",
       iconify: "mdi:github",
     },
   ],
   人工智能: [
     {
       name: "ChatGPT",
-      url: "https://chatgpt.com",
+      url: "https://go.bkmk.link/u35swd",
       iconify: "simple-icons:openai",
       size: "32px",
     },
@@ -108,13 +108,13 @@ const data = {
   设计: [
     {
       name: "Iconify",
-      url: "https://icon-sets.iconify.design",
+      url: "https://go.bkmk.link/uggjn2",
       iconify: "simple-icons:iconify",
       size: "32px",
     },
     {
       name: "Photopea",
-      url: "https://photopea.com",
+      url: "https://go.bkmk.link/bkqczu",
       iconify: "simple-icons:photopea",
       size: "32px",
     },
@@ -122,32 +122,32 @@ const data = {
   域名: [
     {
       name: "比较所有顶级域名的价格",
-      url: "https://zh-hans.tld-list.com",
+      url: "https://go.bkmk.link/k7qfe3",
       iconText: "TLD\nLIST",
       size: "16px",
       fontWeight: 600,
     },
     {
       name: "Cloudflare",
-      url: "https://cloudflare.com",
+      url: "https://go.bkmk.link/hcr5yj",
       iconify: "simple-icons:cloudflare",
     },
     {
       name: "Spaceship",
-      url: "https://spaceship.com",
+      url: "https://go.bkmk.link/kgv7r2",
       iconify: "simple-icons:spaceship",
       size: "32px",
     },
     {
       name: "WHO.CX",
-      url: "https://who.cx",
+      url: "https://go.bkmk.link/g56bmk",
       icon: "/icons/who.cx.svg",
     },
   ],
   资料: [
     {
       name: "维基百科",
-      url: "https://zh.wikipedia.org/wiki/Wikipedia:首页",
+      url: "https://go.bkmk.link/ygxpqb",
       iconify: "mdi:wikipedia",
     },
   ],
