@@ -3,22 +3,30 @@ const data = {
     {
       name: "動漫花園資源網",
       url: "https://share.dmhy.org",
-      icon: "/icons/share.dmhy.org.svg",
+      icon: "/icons/share.dmhy.org.png",
+      size: "100%",
+      radius: "16px",
     },
     {
       name: "柯南事务所",
       url: "https://share.dmhy.org/topics/list/team_id/75",
-      icon: "/icons/share.dmhy.org.svg",
+      icon: "/icons/share.dmhy.org.png",
+      size: "100%",
+      radius: "16px",
     },
     {
       name: "星光字幕组",
       url: "https://share.dmhy.org/topics/list/team_id/299",
-      icon: "/icons/share.dmhy.org.svg",
+      icon: "/icons/share.dmhy.org.png",
+      size: "100%",
+      radius: "16px",
     },
     {
       name: "银色子弹字幕组",
       url: "https://share.dmhy.org/topics/list/team_id/576",
-      icon: "/icons/share.dmhy.org.svg",
+      icon: "/icons/share.dmhy.org.png",
+      size: "100%",
+      radius: "16px",
     },
     {
       name: "名侦探柯南动画集数列表",
@@ -145,6 +153,11 @@ const data = {
     },
   ],
   资料: [
+    {
+      name: "阿拉丁神灯",
+      url: "https://aldsd.com",
+      icon: "/icons/aldsd.com.svg",
+    },
     {
       name: "维基百科",
       url: "https://zh.wikipedia.org/wiki/Wikipedia:首页",
