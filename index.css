@@ -72,7 +72,7 @@ body::before {
 .search-icon {
   color: white;
   font-size: 24px;
-  inset-inline-start: 16px;
+  left: 16px;
   pointer-events: none;
   position: absolute;
   top: 50%;
@@ -98,8 +98,8 @@ body::before {
   color: white;
   cursor: pointer;
   font-size: 24px;
-  inset-inline-end: 16px;
   position: absolute;
+  right: 16px;
   top: 50%;
   transform: translateY(-50%);
   visibility: hidden;
@@ -218,7 +218,7 @@ body::before {
   }
 
   .search-icon {
-    inset-inline-start: 12px;
+    left: 12px;
   }
 
   #search {
@@ -227,7 +227,7 @@ body::before {
   }
 
   #search-clear {
-    inset-inline-end: 12px;
+    right: 12px;
   }
 
   .group-grid {
