@@ -70,6 +70,12 @@ const data = {
       size: "32px",
     },
     {
+      name: "ITDOG",
+      url: "https://itdog.cn",
+      icon: "/icons/itdog.cn.ico",
+      size: "40px",
+    },
+    {
       name: "JSON Editor Online",
       url: "https://jsoneditoronline.org",
       iconify: "lets-icons:json",
