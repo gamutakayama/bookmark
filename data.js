@@ -153,6 +153,12 @@ const data = {
       size: "32px",
     },
     {
+      name: "Upperlink",
+      url: "https://domains.upperlink.ng",
+      icon: "/icons/domains.upperlink.ng.svg",
+      size: "32px",
+    },
+    {
       name: "WHO.CX",
       url: "https://who.cx",
       icon: "/icons/who.cx.svg",
