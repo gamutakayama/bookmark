@@ -47,6 +47,12 @@ const data = {
       iconify: "mdi:file-tree",
     },
     {
+      name: "Bitwarden Password Generator",
+      url: "https://bitwarden.com/password-generator",
+      iconify: "simple-icons:bitwarden",
+      size: "32px",
+    },
+    {
       name: "Cloud Convert",
       url: "https://cloudconvert.com",
       iconify: "ant-design:cloud-sync-outlined",
