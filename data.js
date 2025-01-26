@@ -107,8 +107,13 @@ const data = {
   ],
   脚本: [
     {
-      name: "ECS",
-      url: "https://github.com/spiritLHLS/ecs",
+      name: "IPQuality",
+      url: "https://github.com/xykt/IPQuality",
+      iconify: "mdi:github",
+    },
+    {
+      name: "NextTrace",
+      url: "https://github.com/nxtrace/NTrace-core",
       iconify: "mdi:github",
     },
     {
