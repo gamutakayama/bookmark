@@ -1,6 +1,6 @@
 {
-  "name": "Bookmark",
-  "short_name": "Bookmark",
+  "name": "我梦的书签",
+  "short_name": "我梦的书签",
   "icons": [
     {
       "src": "/images/manifest-icon-192.maskable.png",
