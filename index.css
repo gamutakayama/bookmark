@@ -42,24 +42,21 @@ body::before {
   flex-direction: column;
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "FZZH-TTDMJW";
+  src: url("/fonts/FZZH-TTDMJW.ttf");
+}
+
 .title {
   align-self: center;
   color: white;
-  font-family: "Orbitron", -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "FZZH-TTDMJW", -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji";
   font-size: 80px;
-  font-weight: bold;
   line-height: 1.5;
   margin-top: 64px;
-}
-
-.title span {
-  transition: color 0.3s ease;
-}
-
-.title:hover span {
-  color: #f44336;
 }
 
 .search-box {
