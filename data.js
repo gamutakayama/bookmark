@@ -58,12 +58,6 @@ const data = {
       size: "32px",
     },
     {
-      name: "Favicon Generator",
-      url: "https://favicon.io",
-      iconText: "F",
-      fontFamily: "Leckerli One, system-ui",
-    },
-    {
       name: "Google 翻译",
       url: "https://translate.google.com",
       iconify: "mdi:translate",
@@ -180,6 +174,12 @@ const data = {
       name: "阿拉丁神灯",
       url: "https://aldsd.com",
       icon: "/icons/aldsd.com.svg",
+    },
+    {
+      name: "免费资源网",
+      url: "https://freeaday.com",
+      iconText: "F",
+      fontFamily: "Leckerli One, system-ui",
     },
     {
       name: "维基百科",
