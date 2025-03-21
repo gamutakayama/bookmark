@@ -81,6 +81,11 @@ const data = {
       size: "32px",
     },
     {
+      name: "RegEx101",
+      url: "https://regex101.com",
+      iconText: "R",
+    },
+    {
       name: "Time.is",
       url: "https://time.is",
       iconify: "mdi:clock-time-three",
