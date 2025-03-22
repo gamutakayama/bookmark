@@ -86,6 +86,11 @@ const data = {
       iconText: "R",
     },
     {
+      name: "Text Diff",
+      url: "https://text-diff.pages.dev",
+      iconify: "fluent-mdl2:diff-side-by-side",
+    },
+    {
       name: "Time.is",
       url: "https://time.is",
       iconify: "mdi:clock-time-three",
