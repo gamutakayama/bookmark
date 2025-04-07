@@ -136,6 +136,12 @@ const data = {
   ],
   设计: [
     {
+      name: "Bootstrap Icons",
+      url: "https://icons.getbootstrap.com",
+      iconify: "bi:bootstrap-fill",
+      size: "32px",
+    },
+    {
       name: "Iconify",
       url: "https://icon-sets.iconify.design",
       iconify: "simple-icons:iconify",
