@@ -179,11 +179,6 @@ const data = {
       icon: "/icons/domains.upperlink.ng.svg",
       size: "32px",
     },
-    {
-      name: "WHO.CX",
-      url: "https://who.cx",
-      icon: "/icons/who.cx.svg",
-    },
   ],
   资料: [
     {
