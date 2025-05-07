@@ -19,23 +19,23 @@
     />
   </head>
   <body>
-    <div id="root">
-      <div class="title text-shadow">我梦的书签</div>
-      <div class="search-box">
-        <iconify-icon
-          class="search-icon"
-          icon="mdi:search"
-          noobserver
-        ></iconify-icon>
-        <input id="search" type="text" />
-        <iconify-icon
-          id="search-clear"
-          icon="mdi:remove"
-          noobserver
-        ></iconify-icon>
-      </div>
+    <main>
+      <header>
+        <h1 class="title text-shadow">我梦的书签</h1>
+        <div class="search-box">
+          <iconify-icon
+            class="search-icon"
+            icon="mdi:search"
+            noobserver
+          ></iconify-icon>
+          <input class="search" id="search" type="text" />
+          <button class="search-clear" id="search-clear">
+            <iconify-icon icon="mdi:remove" noobserver></iconify-icon>
+          </button>
+        </div>
+      </header>
       <div id="groups"></div>
-    </div>
+    </main>
     <div id="loader">
       <div class="loader"></div>
     </div>
@@ -77,14 +77,19 @@
       }, 250);
 
       const searchElement = document.getElementById("search");
+      const searchClearElement = document.getElementById("search-clear");
+
       searchElement.addEventListener("input", (e) => {
         if (e.target.isComposing) {
           return;
         }
 
-        const value = e.target.value;
-        search(value);
-        searchClearElement.style.visibility = value ? "visible" : "hidden";
+        search(e.target.value);
+        if (e.target.value) {
+          searchClearElement.classList.add("visible");
+        } else {
+          searchClearElement.classList.remove("visible");
+        }
       });
       searchElement.addEventListener("compositionstart", (e) => {
         e.target.isComposing = true;
@@ -94,23 +99,25 @@
         e.target.dispatchEvent(new CustomEvent("input"));
       });
 
-      const searchClearElement = document.getElementById("search-clear");
       searchClearElement.addEventListener("click", () => {
-        searchElement.value = "";
         searchElement.focus();
-        searchClearElement.style.visibility = "hidden";
+        searchElement.select();
+        if (!document.execCommand("delete", false)) {
+          searchElement.setRangeText("");
+        }
 
         search("");
+        searchClearElement.classList.remove("visible");
       });
 
       const groupsElement = document.getElementById("groups");
 
       const createGroupElement = (name, bookmarks) => {
-        const groupElement = document.createElement("div");
+        const groupElement = document.createElement("section");
         groupElement.classList.add("group");
 
         if (name) {
-          const nameElement = document.createElement("div");
+          const nameElement = document.createElement("h3");
           nameElement.classList.add("group-name", "text-shadow");
           nameElement.innerText = name;
           groupElement.appendChild(nameElement);
@@ -131,6 +138,7 @@
         bookmarkElement.classList.add("bookmark");
         if (bookmark.url) {
           bookmarkElement.href = bookmark.url;
+          bookmarkElement.rel = "nofollow noopener noreferrer";
           bookmarkElement.target = "_blank";
         }
 
