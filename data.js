@@ -86,11 +86,6 @@ const data = {
       iconText: "R",
     },
     {
-      name: "Text Diff",
-      url: "https://text-diff.pages.dev",
-      iconify: "fluent-mdl2:diff-side-by-side",
-    },
-    {
       name: "Time.is",
       url: "https://time.is",
       iconify: "mdi:clock-time-three",
@@ -101,12 +96,6 @@ const data = {
       icon: "/icons/tinypng.com.png",
       size: "100%",
       radius: "16px",
-    },
-    {
-      name: "TOTP Token Generator",
-      url: "https://totp-token-generator.pages.dev",
-      icon: "/icons/totp-token-generator.pages.dev.svg",
-      size: "32px",
     },
   ],
   脚本: [
