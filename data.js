@@ -171,11 +171,6 @@ const data = {
   ],
   资料: [
     {
-      name: "阿拉丁神灯",
-      url: "https://aldsd.com",
-      icon: "/icons/aldsd.com.svg",
-    },
-    {
       name: "免费资源网",
       url: "https://freeaday.com",
       iconText: "F",
