@@ -1,6 +1,6 @@
 {
-  "name": "我梦的书签",
   "short_name": "我梦的书签",
+  "name": "我梦的书签",
   "icons": [
     {
       "src": "/images/manifest-icon-192.maskable.png",
@@ -27,6 +27,8 @@
       "purpose": "maskable"
     }
   ],
+  "id": "/",
   "start_url": "/",
-  "display": "minimal-ui"
+  "display": "standalone",
+  "scope": "/"
 }
