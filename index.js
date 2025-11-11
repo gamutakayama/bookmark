@@ -96,6 +96,14 @@ const createBookmarkElement = (bookmark) => {
     bookmarkElement.href = bookmark.url;
     bookmarkElement.rel = "nofollow noopener noreferrer";
     bookmarkElement.target = "_blank";
+
+    bookmarkElement.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      chrome.windows.getCurrent((win) => {
+        chrome.tabs.create({ url: bookmark.url, windowId: win.id });
+      });
+    });
   }
 
   const backgroundElement = document.createElement("div");
@@ -162,16 +170,6 @@ for (const [name, bookmarks] of Object.entries(data)) {
 }
 
 document.getElementById("loader").style.display = "none";
-
-document.querySelectorAll("a.bookmark").forEach((a) => {
-  a.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    chrome.windows.getCurrent((win) => {
-      chrome.tabs.create({ url: a.href, windowId: win.id });
-    });
-  });
-});
 
 window.addEventListener("load", () => {
   const isDesktop = "not screen and (hover: none) and (pointer: coarse)";
