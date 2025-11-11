@@ -171,12 +171,6 @@ const data = {
   ],
   资料: [
     {
-      name: "免费资源网",
-      url: "https://freeaday.com",
-      iconText: "F",
-      fontFamily: "Leckerli One, system-ui",
-    },
-    {
       name: "维基百科",
       url: "https://zh.wikipedia.org/wiki/Wikipedia:首页",
       iconify: "mdi:wikipedia",
