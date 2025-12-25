@@ -162,12 +162,6 @@ const data = {
       iconify: "simple-icons:spaceship",
       size: "32px",
     },
-    {
-      name: "Upperlink",
-      url: "https://domains.upperlink.ng",
-      icon: "/icons/domains.upperlink.ng.svg",
-      size: "32px",
-    },
   ],
   资料: [
     {
